@@ -10,7 +10,16 @@ main > .infoMain {
     grid-gap: 10px;
     grid-auto-columns: 200px;
   }
+button {
+  background-color: black;
+  height: 30px;
+  border-color: black;
+  color: yellowgreen;
+}
+button :hover {
+  cursor: pointer;
 
+}
 
 /* 
 .App-logo {
