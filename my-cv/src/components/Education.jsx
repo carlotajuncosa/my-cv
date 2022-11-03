@@ -1,27 +1,20 @@
 import React from 'react'
 
+
 const Education = ({ education }) => {
+ 
   return (
     <div>
     <p>Education</p>
-    <p>{education[0].name}</p>
-    <p>{education[0].date}</p>
-    <p>{education[0].where}</p>
-    <p>{education[1].name}</p>
-    <p>{education[1].date}</p>
-    <p>{education[1].where}</p>
-    <p>{education[2].name}</p>
-    <p>{education[2].date}</p>
-    <p>{education[2].where}</p>
-    <p>{education[3].name}</p>
-    <p>{education[3].date}</p>
-    <p>{education[3].where}</p>
-    <p>{education[4].name}</p>
-    <p>{education[4].date}</p>
-    <p>{education[4].where}</p>
-    <p>{education[5].name}</p>
-    <p>{education[5].date}</p>
-    <p>{education[5].where}</p>
+    {education.map((edu) => {
+      return (
+        <div key={JSON.stringify(edu)}> {/* guia a react para que tome este objeto */}
+        <p>{edu.name}</p>
+        <p>{edu.date}</p>
+        <p>{edu.where}</p>
+        </div>)
+    })}
+ 
     </div>
   )
 }

@@ -16,6 +16,7 @@ function App() {
     <div className='App'>
     <main>
        <Heroine heroine={heroine} />
+       <div className="infoMain">
        <About aboutMe={heroine.aboutMe} />
        <Education education={education} />
        <Experience experience={experience} />
@@ -25,6 +26,7 @@ function App() {
          awards={awards}
          volunteer={volunteer}
         />
+        </div>
         </main>
     </div>
   );
