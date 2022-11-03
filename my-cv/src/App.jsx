@@ -4,12 +4,12 @@ import './App.css';
 import Heroine from './components/Heroine';
 import About from './components/About';
 import Education from './components/Education';
-import More from './components/More';
 import Experience from './components/Experience';
+import More from './components/More';
 
 import { CV } from './CV/CV';
 
-const { heroine, education, experience, languages, habilities, awards, volunteer } = CV;
+const { heroine, education, books, exhibitions, lecturer, design, languages, habilities, awards, volunteer } = CV;
 
 function App() {
   return (
@@ -19,7 +19,12 @@ function App() {
        <div className="infoMain">
        <About aboutMe={heroine.aboutMe} />
        <Education education={education} />
-       <Experience experience={experience} />
+       <Experience 
+         books={books} 
+         exhibitions={exhibitions}
+         lecturer={lecturer}
+         design={design} 
+         />
        <More
          languages={languages}
          habilities={habilities}
