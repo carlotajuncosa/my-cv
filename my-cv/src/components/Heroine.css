@@ -1,63 +1,67 @@
-body{
-  background-color: greenyellow;
-  margin-top: -20px;
+body {
+  /* background-color: greenyellow; */
 }
+
 .heroine {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    width:100%;
-    height: 200px;
-  }
-  .card {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+  display: flex;
+  align-items: center; 
+  width: 100vw;
+  justify-content: space-around
+}
+.nameTitle{
+  display: flex;
+  gap: 10px;
+  margin: 0px;
+}
+h4:first-child{
+font-family: Satoshi-Bold;
+}
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
-  img {
-    width: 100px;
-    border-radius: 50%;
-    margin-left: 15px;
-    margin-right: 10px;
-  }
- h2 {
-    font-style: italic; 
-    font-size: large;
-    text-decoration: line-through;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-right: #f85353 dashed 1px;
-    border-left: #f85353 dashed 1px;
-    padding-top: 20px;
-
-  }
+img {
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+h2 {
+  font-style: italic;
+  font-size: large;
+  text-decoration: line-through;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: #f85353 dashed 1px;
+  border-left: #f85353 dashed 1px;
+  /* padding-top: 20px; */
+}
 /*   h2:hover{
     display: none;
   } */
 
-  .card > :nth-child(7) {
-    text-decoration: none;
-  }
+.card > :nth-child(7) {
+  text-decoration: none;
+}
 
-  a {
-    color: #235601;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: small;
-  }
+a {
+  color: #235601;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: small;
+}
 
-  a:hover {
-    font-size: large;
-  }
+a:hover {
+  font-size: large;
+}
 
-  p{
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: bold;
-    font-size: small;
-  }
- 
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  font-size: small;
+}

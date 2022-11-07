@@ -1,5 +1,6 @@
-import { useState } from "react";
 import './App.css';
+import { useState } from "react";
+import { MyContext } from "./Shared/Context";
 
 import Heroine from './components/Heroine';
 import About from './components/About';
@@ -8,30 +9,32 @@ import Experience from './components/Experience';
 import More from './components/More';
 
 import { CV } from './CV/CV';
+import Navbar from "./components/Navbar";
+import Render from './components/Render';
+
 
 const { heroine, education, books, exhibitions, lecturer, design, languages, habilities, awards, volunteer } = CV;
 
 function App() {
-  const [showEducation, setShowEducation] = useState(true);
+  const [showState, setShowState] =useState("ABOUT")
  
   return (
+    <MyContext.Provider value={({showState, setShowState})}>
     <div className='App'>
-    <main>
+    <header>
        <Heroine heroine={heroine} />
-       <div className="infoMain">
-       <About aboutMe={heroine.aboutMe} />
+    </header>
+    <main>
+   
+    <Render/>
+
+
+    </main>
        
-    <button onClick={()=> setShowEducation(true)}>Education</button>
-    <button onClick={()=>setShowEducation(false)}>Experience</button>
-
-    <div>
-      {showEducation ? (
-        <Education education={education}/>
-      ) : (
-        <Experience experience={experience} />
-      )}
-    </div>
-
+      
+      {/*  <About aboutMe={heroine.aboutMe}/>
+       <div className="infoMain">
+       <Education education={education}/>
        <Experience 
          books={books} 
          exhibitions={exhibitions}
@@ -43,10 +46,10 @@ function App() {
          habilities={habilities}
          awards={awards}
          volunteer={volunteer}
-        />
-        </div>
-        </main>
+        /> </div>*/}
+        
     </div>
+    </MyContext.Provider>
   );
 } 
 

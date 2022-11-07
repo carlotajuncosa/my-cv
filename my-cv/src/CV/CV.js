@@ -208,7 +208,7 @@ export const CV = {
       name: "Bcn Crea",
       date: "2022",
       description:
-        "Visual arts. Tehe impact of the city on its habitants and environment",
+        "Visual arts. The impact of the city on its habitants and environment",
     },
     {
       name: "Il·lulola",

@@ -1,0 +1,16 @@
+.cardAbout{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.cardPhoto{
+    background-color: rgb(240, 240, 240);
+    width: 400px;
+    height: 600px;
+    -webkit-box-shadow: -12px 10px 26px -6px rgba(0,0,0,0.28);
+    -moz-box-shadow: -12px 10px 26px -6px rgba(0,0,0,0.28);
+    box-shadow: -12px 10px 26px -6px rgba(0,0,0,0.28);
+
+}

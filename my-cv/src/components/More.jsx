@@ -3,18 +3,17 @@ import React from 'react'
 const More = ({ languages, habilities, awards, volunteer }) => {
   return (
     <div>
-    <p>More</p>
-    <p>Languages</p>
+    <h3>More</h3>
+    {/* <h4>Languages</h4>
     {languages.map((language)=>{
       return(
         <div key={JSON.stringify(language)}>
-          <p>Language: {language.language}</p>
-          <p>Writing: {language.wrlevel}</p>
-          <p>Speaking:{language.splevel}</p>
+          <p>{language.language}</p>
+          <p>Writing: {language.wrlevel} | Speaking:{language.splevel}</p>
         </div>
       )
     })}
-    <p>Habilities</p>
+    <h4>Habilities</h4>
       {habilities.map((hability)=>{
         return(
           <div key={JSON.stringify(hability)}>
@@ -24,7 +23,7 @@ const More = ({ languages, habilities, awards, volunteer }) => {
           </div>
         )
       })}
-      <p>Awards</p>
+      <h4>Awards</h4>
       {awards.map((award)=>{
         return(
           <div key={JSON.stringify(award)}>
@@ -34,6 +33,16 @@ const More = ({ languages, habilities, awards, volunteer }) => {
           </div>
         )
       })}
+      <h4>Volunteer</h4>
+      {volunteer.map((vol)=>{
+        return(
+          <div key={JSON.stringify(vol)}>
+            <p>{vol.name}</p>
+            <p>{vol.date}, {vol.where}</p>
+            <p>{vol.description}</p>
+          </div>
+        )
+      })} */}
     </div>
   )
 };
