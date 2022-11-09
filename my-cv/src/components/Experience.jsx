@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { MyContext } from "../Shared/Context";
+import "./Experience.scss"
 
-const Experience = ({books, exhibitions, lecturer, design}) => {
+const Experience = () => {
+    const {books, exhibitions, lecturer, design} = useContext(MyContext);
   return (
     <div><h3>Experience</h3>
-   {/*  <h4>Books</h4>
+   <h4>Books</h4>
     {books.map((book) =>{
         return(
             <div key={JSON.stringify(book)}>
@@ -43,7 +46,7 @@ const Experience = ({books, exhibitions, lecturer, design}) => {
                 <p>{item.description}</p>
             </div>
         )
-    })}  */}
+    })} 
     </div>
 
   )}
