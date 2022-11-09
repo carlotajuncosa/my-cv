@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { MyContext } from "../Shared/Context";
+import "./More.scss"
 
-const More = ({ languages, habilities, awards, volunteer }) => {
+const More = () => {
+  const { languages, habilities, awards, volunteer } = useContext(MyContext);
   return (
     <div>
     <h3>More</h3>
     <h4>Languages</h4>
-    {/* {languages.map((language)=>{
+    {languages.map((language)=>{
       return(
         <div key={JSON.stringify(language)}>
           <p>{language.language}</p>
@@ -42,7 +45,7 @@ const More = ({ languages, habilities, awards, volunteer }) => {
             <p>{vol.description}</p>
           </div>
         )
-      })} */}
+      })}
     </div>
   )
 };
