@@ -7,13 +7,13 @@ import More from './More'
 
 
 const Render = () => {
-const { showState } = useContext(MyContext)
+const { info } = useContext(MyContext)
     return (
     <div>
-    {showState === "ABOUT" && <About/>}
-    {showState === "EDUCATION" && <Education/>}
-    {showState === "EXPERIENCE" && <Experience/>}
-    {showState === "MORE" && <More/>}
+    {info === "ABOUT" && <About/>}
+    {info === "EDUCATION" && <Education/>}
+    {info === "EXPERIENCE" && <Experience/>}
+    {info === "MORE" && <More/>}
     
     </div>
   )

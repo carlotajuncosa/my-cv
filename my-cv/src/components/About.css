@@ -1,16 +1,65 @@
-.cardAbout{
-    padding-top: 20px;
+.cardAbout{ 
     display: flex;
     justify-content: center;
-    align-items: center;
-   
+    align-items: flex-start;   
 }
 .cardPhoto{
-    background-color: rgb(240, 240, 240);
-    width: 400px;
-    height: 600px;
+    background-color: rgb(239, 239, 239);
+    width: 380px;
+    height: 450px;
     -webkit-box-shadow: -12px 10px 26px -6px rgba(0,0,0,0.28);
     -moz-box-shadow: -12px 10px 26px -6px rgba(0,0,0,0.28);
     box-shadow: -12px 10px 26px -6px rgba(0,0,0,0.28);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Satoshi;
 
+}
+.card{
+    width: 330px;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align:start;
+    
+}
+.card > h2 {
+    line-height: 1.5;
+    font-style: italic;
+    text-decoration: line-through;
+    padding-left: 30px;
+
+}
+
+
+.h2Bold{
+    font-family: Satoshi-Bold;
+    padding-top: 20px;
+}
+
+hr{
+    width: 53px;
+    height: 0;
+    border: 1px solid #275fee;
+    display:inline-block;
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+.cardPhoto > div {
+    padding: 20px;
+}
+
+.containerIcons{
+    background-color: white;
+    width: 340px;
+
+}
+
+.imageContainer{
+    margin-top: 20px;
 }

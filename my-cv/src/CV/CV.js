@@ -7,7 +7,7 @@ export const CV = {
     birthDate: "02/12/1984",
     phone: "652800919",
     image:
-      "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/259406/384753_307431.jpeg",
+      "https://blancfestival.com/wp-content/uploads/2022/04/carlota.jpg",
     gitHub: "https://github.com/carlotajuncosa",
     aboutMe: [
       {

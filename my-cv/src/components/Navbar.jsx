@@ -1,17 +1,16 @@
 import React, {useContext} from 'react'
-import About from './About';
 import './Navbar.css';
 import { MyContext } from "../Shared/Context"
 
 const Navbar = () => {
-const { setShowState } = useContext(MyContext)
+const { setInfo } = useContext(MyContext)
  
   return (
     <nav>
-        <button onClick={()=>setShowState('ABOUT')}>ABOUT</button>
-        <button onClick={()=>setShowState('EDUCATION')}>EDUCATION</button>
-        <button onClick={()=>setShowState('EXPERIENCE')}>EXPERIENCE</button>
-        <button onClick={()=>setShowState('MORE')}>MORE</button> 
+        <button onClick={()=>setInfo('ABOUT')}>ABOUT</button>
+        <button onClick={()=>setInfo('EDUCATION')}>EDUCATION</button>
+        <button onClick={()=>setInfo('EXPERIENCE')}>EXPERIENCE</button>
+        <button onClick={()=>setInfo('MORE')}>MORE</button> 
    </nav> 
    
 

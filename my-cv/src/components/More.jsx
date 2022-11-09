@@ -4,8 +4,8 @@ const More = ({ languages, habilities, awards, volunteer }) => {
   return (
     <div>
     <h3>More</h3>
-    {/* <h4>Languages</h4>
-    {languages.map((language)=>{
+    <h4>Languages</h4>
+    {/* {languages.map((language)=>{
       return(
         <div key={JSON.stringify(language)}>
           <p>{language.language}</p>
