@@ -1,0 +1,19 @@
+nav {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  button {
+    border: none;
+    font-family: Satoshi;
+    font-size: small;
+    background-color: white;
+  }
+
+  button:hover {
+    cursor: pointer;
+    font-size: small;
+    font-family: Satoshi-Medium;
+  }
+}

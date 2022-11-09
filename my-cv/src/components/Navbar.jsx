@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import './Navbar.css';
+import './Navbar.scss';
 import { MyContext } from "../Shared/Context"
 
 const Navbar = () => {

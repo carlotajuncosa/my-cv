@@ -1,8 +1,8 @@
-import './App.css';
+import './App.scss';
 import { useState } from "react";
 import { MyContext } from "./Shared/Context";
 
-import Heroine from './components/Heroine';
+import Header from './components/Header';
 import { CV } from './CV/CV';
 import Render from './components/Render';
 
@@ -16,7 +16,7 @@ function App() {
     <MyContext.Provider value={{info, setInfo, heroine, education, books, exhibitions, lecturer, design, languages, habilities, awards, volunteer}}>
     <div className='App'>
     <header>
-       <Heroine/>
+       <Header/>
     </header>
     <main>
    

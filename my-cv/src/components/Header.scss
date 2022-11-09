@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+  background-color: rgb(140, 144, 21);
+  position: fixed;
+  padding: 0px 10px;
+  width: 98%;
+
+  .nameTitle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: red;
+
+    h4 {
+      padding: 0;
+      margin: 5px 0;
+    }
+
+    h4:first-child {
+      font-family: Satoshi-Bold;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .nameTitle {
+      flex-direction: column;
+      background-color: aqua;
+    }
+  }
+}
