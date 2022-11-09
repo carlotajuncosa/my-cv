@@ -63,8 +63,18 @@
         a {
           color: black;
           text-decoration: none;
-          font-weight: bold;
-          font-size: small;
+          .github--icon {
+            width: 3em;
+            height: 2em;
+          }
+          .linkedin--icon {
+            width: 3em;
+            height: 2em;
+          }
+          .mail--icon {
+            width: 3em;
+            height: 2em;
+          }
         }
 
         a:hover {
