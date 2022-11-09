@@ -1,19 +1,18 @@
 .header {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 80px;
   justify-content: space-between;
-  background-color: rgb(140, 144, 21);
+  background-color: rgb(192, 208, 15);
   position: fixed;
-  padding: 0px 10px;
-  width: 98%;
+  width: 100%;
 
   .nameTitle {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    background-color: red;
+    margin-left: 30px;
 
     h4 {
       padding: 0;
@@ -27,7 +26,67 @@
   @media only screen and (max-width: 900px) {
     .nameTitle {
       flex-direction: column;
-      background-color: aqua;
+      align-items: flex-start;
+      padding: 0px;
+      line-height: 0em;
     }
   }
+  @media only screen and (max-width: 700px) {
+    .nameTitle {
+      /* flex-direction: column;
+      align-items: flex-start;
+      padding: 5px;*/
+      margin-left: 15px; 
+      line-height: 1.2em;
+      background-color: white;
+      width: 350px;
+    }
+
+    h4:first-child {
+      margin-bottom: -10px;
+    }
+    h4:last-child {
+      margin-bottom: 10px;
+    }
+  }
+  /* @media only screen and (max-width: 550px) {
+    .nameTitle {
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+      line-height: 1.2em;
+      background-color: blue;
+      width: 500px;
+      font-size: 1.5em;
+      margin: 0px;
+    }
+    h4 {
+      padding: 0px;
+    }
+    h4:first-child {
+      margin-bottom: -10px;
+    }
+  } */
 }
+@media only screen and (max-width: 700px) {
+ .header {
+  display: flex;
+    height: 110px;
+    flex-direction: column;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+  } 
+}
+/* @media only screen and (max-width: 550px) {
+  .header {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    justify-content: space-around;
+    width: 100%;
+  }
+} */
