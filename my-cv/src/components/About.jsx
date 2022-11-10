@@ -5,17 +5,19 @@ import "./About.scss";
 const About = () => {
   const { heroine } = useContext(MyContext);
   return (
-    <div>
-      <div className="cardAbout">
-        <div className="cardPhoto">
-          <div className="imageContainer">
+      <div className="allCards">
+        
+        <div className="cardLeft">
+          
+          <div className="photoAndTitle">
             <img src={heroine.image} alt="" />
 
-            <h2 className="h2Bold">CARLOTA JUNCOSA</h2>
+            <h2 className="name">CARLOTA JUNCOSA</h2>
             <hr />
             <h3>FULL STACK DEVELOPER JR</h3>
             <h3>& CARTOONIST</h3>
           </div>
+
           <div className="containerIcons">
             <ul>
               <li>
@@ -76,8 +78,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="socialMedia">
-          <div className="card">
+          <div className="cardRight">
             <h2> "Random goal: work in tracksuit" </h2>
 
             <h2> "Random goal: write a book" </h2>
@@ -86,9 +87,7 @@ const About = () => {
 
             <h2> "Random goal: learn to make an omelette" </h2>
           </div>
-        </div>
       </div>
-    </div>
   );
 };
 
